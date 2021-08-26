@@ -1,0 +1,36 @@
+body{
+    background-color:#D4DDBC;
+    color:#444444;
+    font-size:16px
+}
+h1{
+    
+    }
+figure{
+    display: block;
+    border: 3px solid #902A11;
+    border-radius: 16px;
+    float:left;
+    margin-left: 9%;
+    margin-right: 9%;
+    max-width: 30%;
+    height: auto;
+    background-color:#9CA897;
+
+}
+figcaption{
+    text-align: center;
+}
+img{
+    border-radius: 16px;
+}
+a{
+    color:#902A11;
+}
+footer{
+    background-color: #788972;
+}
+.start:first-letter{
+   font-size:150%;
+
+}
