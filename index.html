@@ -6,30 +6,105 @@
         <title>Feathered Friends: Knowing the difference</title>
     </head>
     <body>
+        <div style="display:block;float:left;margin-right:2%;background-color:#444444">
+            <img id="logo" style="object-fit:fill" src="images/bird_logo.png">
+        </div>
         <h1>Birds, drones, and knowing the difference.</h1>
-        <p style="text-align:center; size:200%">With the continuing innovation of unmanned drone technology, and the ever increasing threat of a robot uprising, now more than ever it's important to know the difference between birds and drones.</p>
+
+        <button id="bt" type="button" onclick="dronealert()";>
+            DRONE ALERT
+        </button>
+
+        <script>
+            function dronealert() {
+                document.getElementById("ts1").style.backgroundColor = "#444444";
+                document.getElementById("ts2").style.backgroundColor = "#444444";
+                document.getElementById("ts3").style.backgroundColor = "#444444";
+                document.getElementById("ts4").style.backgroundColor = "#444444";
+                document.getElementById("ts5").style.backgroundColor = "#444444";
+                document.getElementById("ts6").style.backgroundColor = "#444444";
+                document.getElementById("ts7").style.backgroundColor = "#444444";
+                document.getElementById("ts8").style.backgroundColor = "#444444";
+                document.getElementById("ts9").style.backgroundColor = "#444444";
+                document.getElementById("ts10").style.backgroundColor = "#444444";
+                document.getElementById("bimg1").src = "images/droneprop1.png";
+                document.getElementById("bimg2").src = "images/droneprop2.png";
+                document.getElementById("logo").src = "images/drone_logo.png";
+            }
+        </script>
+
+        <button type="button" onclick="allclear()";>
+            ALL CLEAR
+        </button>
+
+        <script>
+            function allclear() {
+                var safe = prompt("Confirm area clear of drones. If clear, please enter CLEAR")
+                if(safe == "CLEAR"){
+                document.getElementById("ts1").style.backgroundColor = "";
+                document.getElementById("ts2").style.backgroundColor = "";
+                document.getElementById("ts3").style.backgroundColor = "";
+                document.getElementById("ts4").style.backgroundColor = "";
+                document.getElementById("ts5").style.backgroundColor = "";
+                document.getElementById("ts6").style.backgroundColor = "";
+                document.getElementById("ts7").style.backgroundColor = "";
+                document.getElementById("ts8").style.backgroundColor = "";
+                document.getElementById("ts9").style.backgroundColor = "";
+                document.getElementById("ts10").style.backgroundColor = "";
+                document.getElementById("bimg1").src = "images/birds-from-below.jpg";
+                document.getElementById("bimg2").src = "images/drone-from-below.jpg";
+                document.getElementById("logo").src = "images/bird_logo.png";
+                }else{
+                    alert("AREA NOT CONFIRMED CLEAR. PLEASE CONFIRM TO CLEAR ALERT.")
+                }
+            }
+        </script>
+
+        <p id="ts1" class="bird" style="text-align:left;">With the continuing innovation of unmanned drone technology, and the ever increasing threat of a robot uprising, now more than ever it's important to know the difference between birds and drones.</p>
+
         <h2>Our Mission</h2>
-        <p class="start">At the Brotherhood of Interspecies Recognition and Demilitarization, we strive to bring about a world where humanity can live alongside our world's bird population in peace. We envision a world where aggression between our two species is a thing of the past, and where we can unite against our true enemies in the skies.</p>
-        <p> In our pursuit of this goal we have composed this guide to help citizens make informed decisions when encountering our neighbors in the sky.</p>
+        <p id="ts2" class="bird">At the Brotherhood of Interspecies Recognition and Demilitarization, we strive to bring about a world where humanity can live alongside our world's bird population in peace. We envision a world where aggression between our two species is a thing of the past, and where we can unite against our true enemies in the skies.</p>
+        <p id="ts3" class="bird"> In our pursuit of this goal we have composed this guide to help citizens make informed decisions when encountering our neighbors in the sky.</p>
+        
         <h2>So you see something flying, what now?</h2>
-        <p class="start">The threat of drones in our skies is indeed great, but we must not forget our fragile alliance with bird-kind. A discerning eye and sound judgement is necessary in order to preserve both ourselves and our allies.</p>
-        <p>Humans have many tools at their disposal, and we recommend using multiple senses when trying to identify a flying object:</p>
-        <ul>
+        <p id="ts4" class="bird">The threat of drones in our skies is indeed great, but we must not forget our fragile alliance with bird-kind. A discerning eye and sound judgement is necessary in order to preserve both ourselves and our allies.</p>
+        <p id="ts5" class="bird">Humans have many tools at their disposal, and we recommend using multiple senses when trying to identify a flying object:</p>
+        <ul id="ts6" class="bird">
             <li><strong>Look:</strong> Use your eyes to evaluate the shape of the flying object. Is it round? Square? Triangular? Trapezoidal? Take note of the specific shape and consider drawing a picture to present to authorities</li>
             <li><strong>Listen:</strong> Try to take note of any sounds coming from the object. A buzzing or humming sound would indicate a drone and be cause for alarm. A higher "tweeting" sound is most likely to come from a bird, in which case you can be at ease.</li>
             <li><strong>Feel:</strong> Try to feel if there's a breeze coming down from above. Most drones use propellers for lift and a downward breeze will be a dead giveaway.</li>
         </ul>
-        <figure>
-            <img src="images/birds-from-below.jpg" alt="image of bird as seen from below. Note the long trapezoidal body.">
+        
+        <figure id="ts7" class="bird">
+            <img class="bimg" id="bimg1" src="images/birds-from-below.jpg" alt="image of bird as seen from below. Note the long trapezoidal body.">
             <figcaption>Photo of birds as seen from below. Note the trapezoidal body shape.</figcaption>
         </figure>
-        <figure>
-            <img src="images/drone-from-below.jpg" atl="image of drone as seen from below. Note the X-like body">
+        <figure id="ts8" class="bird">
+            <img class="bimg" id="bimg2" src="images/drone-from-below.jpg" atl="image of drone as seen from below. Note the X-like body">
             <figcaption>Photo of a drone as seen from below. Note the "X-shaped" body.</figcaption>
         </figure>
+        
         <h2 style="clear:both">What to do if you've found a drone</h2>
-        <p class="start">Above all, rememeber that <strong>dones are an enemy.</strong> If you believe you've found a drone, contact your local resistance group and do you best not to lose sight of the drone. If no immediate danger is presented remember to stay calm.</p>
-        <p>For additional information on how to identify a bird please review <a href="https://academy.allaboutbirds.org/features/birdanatomy/">this anatomy guide.</a> Remember, in these trying times <strong>knowledge is power!</strong></p>
+        <p id="ts9" class="bird">Above all, rememeber that <strong>dones are an enemy.</strong> If you believe you've found a drone, contact your local resistance group and do you best not to lose sight of the drone. If no immediate danger is presented remember to stay calm.</p>
+        <p id="ts10" class="bird">For additional information on how to identify a bird please review <a href="https://academy.allaboutbirds.org/features/birdanatomy/">this anatomy guide.</a> Remember, in these trying times <strong>knowledge is power!</strong></p>
+        
+        <h2>Sign up</h2>
+
+        To join the fight, all we need is your last name:<br>
+        Last name: <input id="lastname">
+        <button onclick="signup()">Submit</button>
+
+        <p id="welcome"></p>
+
+        <script>
+            function signup() {
+                var lname = document.getElementById("lastname").value;
+                var greet = 'Welcome to the fight, Private ' + lname +'! We are glad to have you on board.';
+                document.getElementById("welcome").innerHTML = greet;
+            }
+        </script>
+
         <footer>This message brought to you by B.I.R.D. For a brighter future, today. Images found at <a href="https://pixabay.com/">pixabay.com</a></footer>
     </body>
+    <script src="jsfunctions.js"></script>
 </html>
