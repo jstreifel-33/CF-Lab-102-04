@@ -58,3 +58,12 @@ function signup(){
     }
     document.getElementById("welcome").innerHTML = greet;
 }
+
+function dronecount(){
+    let drones;
+    drones = document.getElementById("destroyed").value;
+    for (i = 0; i < drones; ++i){
+        document.getElementById("droneCount").innerHTML += '<img src="drone-eliminated.png"></img>';
+        
+    }
+}
