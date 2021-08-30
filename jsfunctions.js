@@ -25,6 +25,9 @@ function allclear(){
         alert("Alert not in progress.");
     }else{
         var safe = prompt("Confirm area clear of drones. If clear, please enter CLEAR");
+        while (safe != "CLEAR"){
+            safe = prompt('AREA NOT CONFIRMED CLEAR. PLEASE CONFIRM TO BY ENTERING "CLEAR" TO LIFT ALERT.');
+        }
         if(safe == "CLEAR"){
             document.getElementById("ts1").style.backgroundColor = "";
             document.getElementById("ts2").style.backgroundColor = "";
@@ -40,9 +43,8 @@ function allclear(){
             document.getElementById("bimg2").src = "images/drone-from-below.jpg";
             document.getElementById("logo").src = "images/bird_logo.png";
             lockdown = 0;
-        }else{
-            alert("AREA NOT CONFIRMED CLEAR. PLEASE CONFIRM TO CLEAR ALERT.")
         }
+        
     }
 }
 
@@ -59,11 +61,22 @@ function signup(){
     document.getElementById("welcome").innerHTML = greet;
 }
 
+//Displays images to represent a count of destroyed drones based on user input
 function dronecount(){
     let drones;
     drones = document.getElementById("destroyed").value;
+    document.getElementById("droneCount").innerHTML = "";
+    if (drones == 69){
+        document.getElementById("dronecomment").innerHTML = "Nice."
+    }else if(drones == 0){
+        document.getElementById("dronecomment").innerHTML = "You'll get one someday!"
+    }else if(drones < 0){
+        document.getElementById("dronecomment").innerHTML = "That's not... Are you saying you BUILT drones???"
+    }else{
+        document.getElementById("dronecomment").innerHTML = "Very impressive!"
+    }
     for (i = 0; i < drones; ++i){
-        document.getElementById("droneCount").innerHTML += '<img src="drone-eliminated.png"></img>';
+        document.getElementById("droneCount").innerHTML += '<img class="drone" src="images/drone-eliminated.png"></img>';
         
     }
 }

@@ -25,6 +25,13 @@ figure{
     background-color:#9CA897;
 }
 
+.drone{
+    display: block;
+    width: 10%;
+    height: auto;
+    float: left;
+}
+
 figcaption{
     text-align: center;
 }
