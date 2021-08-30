@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="jsfunctions.js"></script>
         <meta charset="UTF-8">
         <title>Feathered Friends: Knowing the difference</title>
     </head>
@@ -15,50 +16,9 @@
             DRONE ALERT
         </button>
 
-        <script>
-            function dronealert() {
-                document.getElementById("ts1").style.backgroundColor = "#444444";
-                document.getElementById("ts2").style.backgroundColor = "#444444";
-                document.getElementById("ts3").style.backgroundColor = "#444444";
-                document.getElementById("ts4").style.backgroundColor = "#444444";
-                document.getElementById("ts5").style.backgroundColor = "#444444";
-                document.getElementById("ts6").style.backgroundColor = "#444444";
-                document.getElementById("ts7").style.backgroundColor = "#444444";
-                document.getElementById("ts8").style.backgroundColor = "#444444";
-                document.getElementById("ts9").style.backgroundColor = "#444444";
-                document.getElementById("ts10").style.backgroundColor = "#444444";
-                document.getElementById("bimg1").src = "images/droneprop1.png";
-                document.getElementById("bimg2").src = "images/droneprop2.png";
-                document.getElementById("logo").src = "images/drone_logo.png";
-            }
-        </script>
-
         <button type="button" onclick="allclear()";>
             ALL CLEAR
         </button>
-
-        <script>
-            function allclear() {
-                var safe = prompt("Confirm area clear of drones. If clear, please enter CLEAR")
-                if(safe == "CLEAR"){
-                document.getElementById("ts1").style.backgroundColor = "";
-                document.getElementById("ts2").style.backgroundColor = "";
-                document.getElementById("ts3").style.backgroundColor = "";
-                document.getElementById("ts4").style.backgroundColor = "";
-                document.getElementById("ts5").style.backgroundColor = "";
-                document.getElementById("ts6").style.backgroundColor = "";
-                document.getElementById("ts7").style.backgroundColor = "";
-                document.getElementById("ts8").style.backgroundColor = "";
-                document.getElementById("ts9").style.backgroundColor = "";
-                document.getElementById("ts10").style.backgroundColor = "";
-                document.getElementById("bimg1").src = "images/birds-from-below.jpg";
-                document.getElementById("bimg2").src = "images/drone-from-below.jpg";
-                document.getElementById("logo").src = "images/bird_logo.png";
-                }else{
-                    alert("AREA NOT CONFIRMED CLEAR. PLEASE CONFIRM TO CLEAR ALERT.")
-                }
-            }
-        </script>
 
         <p id="ts1" class="bird" style="text-align:left;">With the continuing innovation of unmanned drone technology, and the ever increasing threat of a robot uprising, now more than ever it's important to know the difference between birds and drones.</p>
 
@@ -96,15 +56,6 @@
 
         <p id="welcome"></p>
 
-        <script>
-            function signup() {
-                var lname = document.getElementById("lastname").value;
-                var greet = 'Welcome to the fight, Private ' + lname +'! We are glad to have you on board.';
-                document.getElementById("welcome").innerHTML = greet;
-            }
-        </script>
-
         <footer>This message brought to you by B.I.R.D. For a brighter future, today. Images found at <a href="https://pixabay.com/">pixabay.com</a></footer>
     </body>
-    <script src="jsfunctions.js"></script>
 </html>
